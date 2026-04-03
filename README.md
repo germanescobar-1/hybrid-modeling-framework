@@ -28,15 +28,14 @@ This repository contains MATLAB code for the paper:
 
 | Carpeta | Archivos |
 |---------|----------|
-| **Raíz** | `Instructions.txt` |
 | **Matlab_Code_Villavicencio/** | `Dataset_Villavicencio.m`<br>`Control_SEIR_Villavicencio.m`<br>`Analysis_Efficacy_Control_Villavicencio.m`<br>`ML_Hybrid_SEIR_Villavicencio.m`<br>`Analysis_Profit_Hybrid_Villavicencio.m`<br>`LSTM_Advanced_Features.m`<br>`RawData_Villavicencio.xlsx` |
-| **Results_Control_SEIR_Three_Cities/** | `Results_Control_SEIR_Neiva.mat`<br>`Results_Control_SEIR_Monteria.mat`<br>`Results_Control_SEIR_Villavicencio.mat`<br>`Results_Efficacy_Control_Neiva.mat`<br>`Results_Efficacy_Control_Monteria.mat`<br>`Results_Efficacy_Control_Villavicencio.mat` |
+| **Results_Control_SEIR_Three_Cities/** | `Results_Control_SEIR_Neiva_Data.csv`<br>`Results_Control_SEIR_Neiva_Metrics.csv`<br>`Results_Control_SEIR_Monteria_Data.csv`<br>`Results_Control_SEIR_Monteria_Data.Metrics`<br>`Results_Control_SEIR_Villavicencio_Data.csv`<br>`Results_Control_SEIR_Villavicencio_Metrics.csv`<br>`Results_Efficacy_Control_Neiva_Data.csv`<br>`Results_Efficacy_Control_Neiva_Metrics.csv`<br>`Results_Efficacy_Control_Monteria_Data.csv`<br>`Results_Efficacy_Control_Monteria_Data.Metrics`<br>`Results_Efficacy_Control_Villavicencio_Data.csv`<br>`Results_Efficacy_Control_Villavicencio_Metrics.csv` |
 | **Results_Hybrid_Three_Cities_60-40/** | `Results_Hybrid_Neiva.mat`<br>`Results_Hybrid_Monteria.mat`<br>`Results_Hybrid_Villavicencio.mat`<br>`Results_Gain_Hybrid_Neiva.mat`<br>`Results_Gain_Hybrid_Monteria.mat`<br>`Results_Gain_Hybrid_Villavicencio.mat` |
 | **Results_Hybrid_Three_Cities_70-30/** | `Results_Hybrid_Neiva.mat`<br>`Results_Hybrid_Monteria.mat`<br>`Results_Hybrid_Villavicencio.mat`<br>`Results_Gain_Hybrid_Neiva.mat`<br>`Results_Gain_Hybrid_Monteria.mat`<br>`Results_Gain_Hybrid_Villavicencio.mat` |
 
 ---
 
-## 3. Execution Workflow
+## 3. Execution Workflow: MATLAB Code Villavicencio
 
 **Execute the following scripts in order from the `Matlab_Code_Villavicencio` folder:**
   - `Dataset_Villavicencio`
@@ -79,7 +78,7 @@ This repository contains MATLAB code for the paper:
   - Outputs: `Results_LSTM_Villavicencio.mat`, `LSTM_Predictions_Villavicencio.png`, `LSTM_Comparison_Villavicencio.png`
 
 
-### 3.2 Execution results
+## 4. Execution Workflow: Results Three Cities
 
 
 **Results Three Cities:**
@@ -89,7 +88,7 @@ Load the following files as needed:
 
 ---
 
-## 4. Output Files Description
+## 5. Output Files Description
 
 **Data Processing Outputs:**
 - `Results_Dataset_Villavicencio.mat` → Processed epidemiological data: `fecha`, `expuestos`, `infectados`, `recuperados`, `muertos`, `infectados_activos`
@@ -121,7 +120,7 @@ Load the following files as needed:
 
 ---
 
-## 5. Contact
+## 6. Contact
 
 For questions, issues, or suggestions:
 
