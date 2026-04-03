@@ -11,7 +11,7 @@
 1. [Project Overview](#1-project-overview)
 2. [Repository Structure](#2-repository-structure)
 3. [Execution Workflow: MATLAB Code Villavicencio](#3-execution-workflow-matlab-code-villavicencio)
-4. [Results_Article Cities](#4-execution-workflow-results-three-cities)
+4. [Results: Cities Article](#4-execution-workflow-results-three-cities)
 5. [Output Files Description](#5-output-files-description)
 6. [Contact](#6-contact)
 
