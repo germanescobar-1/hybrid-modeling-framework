@@ -37,16 +37,16 @@ This repository contains MATLAB code for the paper:
 
 ## 3. Execution Workflow: MATLAB Code Villavicencio
 
+### List of Matlab scripts
 **Execute the following scripts in order from the `Matlab_Code_Villavicencio` folder:**
-  - `Dataset_Villavicencio`
-  - `Control_SEIR_Villavicencio`
-  - `Analysis_Efficacy_Control_Villavicencio`
-  - `ML_Hybrid_SEIR_Villavicencio`
-  - `Analysis_Gain_Hybrid_Villavicencio`
-  - `LSTM_Advanced_Features`
+  - `Dataset_Villavicencio.m`
+  - `Control_SEIR_Villavicencio.m`
+  - `Analysis_Efficacy_Control_Villavicencio.m`
+  - `ML_Hybrid_SEIR_Villavicencio.m`
+  - `Analysis_Gain_Hybrid_Villavicencio.m`
+  - `LSTM_Advanced_Features.m`
 
-### 3.1 Execution algorithms
-
+### Execution algorithms
 **Step 1: Data Processing** 
   - Command Window Matlab: `>> Dataset_Villavicencio` 
   - Inputs: `RawData_Villavicencio.xlsx`
@@ -78,13 +78,23 @@ This repository contains MATLAB code for the paper:
   - Outputs: `Results_LSTM_Villavicencio.mat`, `LSTM_Predictions_Villavicencio.png`, `LSTM_Comparison_Villavicencio.png`
 
 
-## 4. Execution Workflow: Results Three Cities
+## 4. Results: Cities Article
 
+Results for the three cities in CSV format
 
-**Results Three Cities:**
-
-Load the following files as needed:
-
+**Results Control Cities:**
+- `Results_Control_SEIR_Neiva_Data.csv`
+- `Results_Control_SEIR_Neiva_Metrics.csv`
+- `Results_Control_SEIR_Monteria_Data.csv`
+- `Results_Control_SEIR_Monteria_Data.Metrics`
+- `Results_Control_SEIR_Villavicencio_Data.csv`
+- `Results_Control_SEIR_Villavicencio_Metrics.csv`
+- `Results_Efficacy_Control_Neiva_Data.csv`
+- `Results_Efficacy_Control_Neiva_Metrics.csv`
+- `Results_Efficacy_Control_Monteria_Data.csv`
+- `Results_Efficacy_Control_Monteria_Data.Metrics`
+- `Results_Efficacy_Control_Villavicencio_Data.csv`
+- `Results_Efficacy_Control_Villavicencio_Metrics.csv` 
 
 ---
 
