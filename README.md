@@ -12,8 +12,7 @@
 2. [Repository Structure](#2-repository-structure)
 3. [Execution Workflow: MATLAB Code Villavicencio](#3-execution-workflow-matlab-code-villavicencio)
 4. [Results: Cities Article](#4-execution-workflow-results-three-cities)
-5. [Output Files Description](#5-output-files-description)
-6. [Contact](#6-contact)
+5. [Contact](#6-contact)
 
 ---
 
@@ -46,40 +45,36 @@ This repository contains MATLAB code for the paper:
   - `Analysis_Gain_Hybrid_Villavicencio.m`
   - `LSTM_Advanced_Features.m`
 
-### Execution algorithms
-**Step 1: Data Processing** 
-  - Command Window Matlab: `>> Dataset_Villavicencio` 
+### Running scripts in Matlab:
+**Step 1: Data processing** 
+  - Command Window: `>> Dataset_Villavicencio` 
   - Inputs: `RawData_Villavicencio.xlsx`
   - Outputs: `Results_Dataset_Villavicencio.mat`, `imputation_statistics_villavicencio.mat`, `imputation_report_villavicencio.txt`, `two figures`
 
-**Step 2: SEIR Control Model Estimation**
-  - Command Window Matlab: `Control_SEIR_Villavicencio`
+**Step 2: SEIR control model estimation**
+  - Command Window: `>> Control_SEIR_Villavicencio`
   - Inputs: `Results_Dataset_Villavicencio.mat`
   - Outputs: `Results_Control_SEIR_Villavicencio.mat`, `Control_SEIR_Villavicencio.png`
 
-**Step 3:** 
-  - Command Window Matlab: `Analysis_Efficacy_Control_Villavicencio`
+**Step 3: Efficacy analysis of the control** 
+  - Command Window: `>> Analysis_Efficacy_Control_Villavicencio`
   - Inputs: `Results_Control_SEIR_Villavicencio.mat`
   - Outputs: `Results_Efficacy_Control_Villavicencio.mat`, `Efficacy_Analysis_Control_Villavicencio.png`, `Weight_Sensitivity.png`
     
-**Step 4:**
-  - Command Window Matlab:`ML_Hybrid_SEIR_Villavicencio`
+**Step 4: Hybrid models**
+  - Command Window:`>> ML_Hybrid_SEIR_Villavicencio`
+  - Function: `LSTM_Advanced_Features`
   - Input: `Results_Efficacy_Control_Villavicencio.mat`
   - Outputs: `Results_Hybrid_Villavicencio.mat`, `Hybrid_Models_Comparison_Villavicencio.png`, `Hybrid_Error_Analysis_Villavicencio.png`
     
-**Step 5:**
-  - Command Window Matlab:`Analysis_Gain_Hybrid_Villavicencio`
+**Step 5: Gain analysis of the hybrid models**
+  - Command Window:`>> Analysis_Gain_Hybrid_Villavicencio`
   - Inputs: `Results_Hybrid_Villavicencio.mat`, `Results_Control_SEIR_Villavicencio.mat`
   - Outputs: `Results_Gain_Hybrid_Villavicencio.mat`, `Hybrid_Gain_Analysis_Villavicencio.png`
-  
-**Step 6:**
-  - Command Window Matlab:`LSTM_Advanced_Features`
-  - Input: `Results_Dataset_Villavicencio.mat`
-  - Outputs: `Results_LSTM_Villavicencio.mat`, `LSTM_Predictions_Villavicencio.png`, `LSTM_Comparison_Villavicencio.png`
 
+---
 
 ## 4. Results: Cities Article
-
 Results for the three cities in CSV format
 
 **Results Control Cities:**
@@ -98,39 +93,7 @@ Results for the three cities in CSV format
 
 ---
 
-## 5. Output Files Description
-
-**Data Processing Outputs:**
-- `Results_Dataset_Villavicencio.mat` → Processed epidemiological data: `fecha`, `expuestos`, `infectados`, `recuperados`, `muertos`, `infectados_activos`
-- `imputation_statistics_villavicencio.mat` → Statistics: `n_original_cases`, `n_imputed_recoveries`, `n_imputed_symptom_dates`, `total_infected`, `total_recovered`, `total_deaths`
-- `imputation_report_villavicencio.txt` → Text report with detailed imputation summary
-
-**SEIR Control Outputs:**
-- `Results_Control_SEIR_Villavicencio.mat` → `I_real`, `I_seir`, `S_seir`, `E_seir`, `u_opt`, `beta_opt`, `R0_opt`, `metrics` (RMSE, MAE, MAPE, R², correlation)
-- `Control_SEIR_Villavicencio.png` → Two subplots: Data vs model fit with R² value, effective reproduction number over time
-
-**Efficacy Analysis Outputs:**
-- `Results_Efficacy_Control_Villavicencio.mat` → `C`, `eta`, `percentage_R0_less_1`, `u_max`, `mean_inertia`, `J`, `I_real`, `I_model`, `u_opt`, `R0_t`, `eta_cum`
-- `Efficacy_Analysis_Control_Villavicencio.png` → 9 subplots: Infected comparison, control effort, efficiency, R₀, inertia, cost-benefit, control vs reduction, distribution, metrics summary
-- `Weight_Sensitivity.png` → 3D surface plot of J(w₁,w₂) sensitivity analysis
-
-**Hybrid Model Outputs:**
-- `Results_Hybrid_Villavicencio.mat` → `t`, `I_real`, `y_train`, `y_test`, `pred_*_train`, `pred_*_test`, `metrics_*`, `feature_names`, `importance_rf`, `importance_xgb`
-- `Hybrid_Models_Comparison_Villavicencio.png` → 4 subplots: Complete series predictions, feature importance, RMSE comparison, prediction vs real scatter
-- `Hybrid_Error_Analysis_Villavicencio.png` → 2 subplots: Absolute error over time, error distribution
-
-**Gain Analysis Outputs:**
-- `Results_Gain_Hybrid_Villavicencio.mat` → `improvement_RMSE`, `improvement_MAE`, `improvement_R2`, `improvement_by_phase`, `robustness`, `stability`, `phases`
-- `Hybrid_Gain_Analysis_Villavicencio.png` → 9 subplots: Global improvement, phase gain, robustness, stability, peak vs quiet errors, temporal error evolution, error distribution, improvement matrix, executive summary
-
-**LSTM Outputs:**
-- `Results_LSTM_Villavicencio.mat` → `predictions`, `actual_values`, `rmse`, `mae`, `mape`, `r2`, `network_architecture`, `training_options`
-- `LSTM_Predictions_Villavicencio.png` → Time series plot showing actual vs predicted values with confidence intervals
-- `LSTM_Comparison_Villavicencio.png` → Comparative visualization between LSTM predictions and hybrid model results
-
----
-
-## 6. Contact
+## 5. Contact
 
 For questions, issues, or suggestions:
 
