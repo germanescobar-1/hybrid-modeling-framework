@@ -26,7 +26,7 @@ This repository contains MATLAB code for the paper:
 
 ## 2. Repository Structure
 
-| Carpeta | Archivos |
+| Folder | File |
 |---------|----------|
 | **Matlab_Code_Villavicencio/** | `Dataset_Villavicencio.m`<br>`Control_SEIR_Villavicencio.m`<br>`Analysis_Efficacy_Control_Villavicencio.m`<br>`ML_Hybrid_SEIR_Villavicencio.m`<br>`Analysis_Profit_Hybrid_Villavicencio.m`<br>`LSTM_Advanced_Features.m`<br>`RawData_Villavicencio.xlsx` |
 | **Results_Control_SEIR_Three_Cities/** | `Results_Control_SEIR_Neiva_Data.csv`<br>`Results_Control_SEIR_Neiva_Metrics.csv`<br>`Results_Control_SEIR_Monteria_Data.csv`<br>`Results_Control_SEIR_Monteria_Data.Metrics`<br>`Results_Control_SEIR_Villavicencio_Data.csv`<br>`Results_Control_SEIR_Villavicencio_Metrics.csv`<br>`Results_Efficacy_Control_Neiva_Data.csv`<br>`Results_Efficacy_Control_Neiva_Metrics.csv`<br>`Results_Efficacy_Control_Monteria_Data.csv`<br>`Results_Efficacy_Control_Monteria_Data.Metrics`<br>`Results_Efficacy_Control_Villavicencio_Data.csv`<br>`Results_Efficacy_Control_Villavicencio_Metrics.csv` |
