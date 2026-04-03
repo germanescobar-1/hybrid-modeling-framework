@@ -11,7 +11,7 @@
 1. [Project Overview](#1-project-overview)
 2. [Repository Structure](#2-repository-structure)
 3. [Execution Workflow: MATLAB Code Villavicencio](#3-execution-workflow-matlab-code-villavicencio)
-4. [Results: Cities Article](#4-execution-workflow-results-three-cities)
+4. [Article Results](#4-execution-workflow-results-three-cities)
 5. [Contact](#6-contact)
 
 ---
@@ -74,10 +74,10 @@ This repository contains MATLAB code for the paper:
 
 ---
 
-## 4. Results: Cities Article
-Results for the three cities in CSV format
+## 4. Article Results
+CSV format of article results for three cities:
 
-**Results Control Cities:**
+**Results Control:**
 - `Results_Control_SEIR_Neiva_Data.csv`
 - `Results_Control_SEIR_Neiva_Metrics.csv`
 - `Results_Control_SEIR_Monteria_Data.csv`
@@ -91,6 +91,33 @@ Results for the three cities in CSV format
 - `Results_Efficacy_Control_Villavicencio_Data.csv`
 - `Results_Efficacy_Control_Villavicencio_Metrics.csv` 
 
+**Results Hybrid Models Dataset 60-40% :**
+- `Results_Hybrid_Monteria_Features.csv`
+- `Results_Hybrid_Monteria_Metrics.csv`
+- `Results_Hybrid_Monteria_Train.csv`
+- `Results_Hybrid_Monteria_Test.csv`
+- `Results_Hybrid_Neiva_Features.csv`
+- `Results_Hybrid_Neiva_Metrics.csv`
+- `Results_Hybrid_Neiva_Train.csv`
+- `Results_Hybrid_Neiva_Test.csv`
+- `Results_Hybrid_Villavicencio_Features.csv`
+- `Results_Hybrid_Villavicencio_Metrics.csv`
+- `Results_Hybrid_Villavicencio_Train.csv`
+- `Results_Hybrid_Villavicencio_Test.csv`
+
+**Results Hybrid Models Dataset 70-30% :**
+- `Results_Hybrid_Monteria_Features.csv`
+- `Results_Hybrid_Monteria_Metrics.csv`
+- `Results_Hybrid_Monteria_Train.csv`
+- `Results_Hybrid_Monteria_Test.csv`
+- `Results_Hybrid_Neiva_Features.csv`
+- `Results_Hybrid_Neiva_Metrics.csv`
+- `Results_Hybrid_Neiva_Train.csv`
+- `Results_Hybrid_Neiva_Test.csv`
+- `Results_Hybrid_Villavicencio_Features.csv`
+- `Results_Hybrid_Villavicencio_Metrics.csv`
+- `Results_Hybrid_Villavicencio_Train.csv`
+- `Results_Hybrid_Villavicencio_Test.csv`
 ---
 
 ## 5. Contact
